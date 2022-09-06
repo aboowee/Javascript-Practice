@@ -9,11 +9,21 @@ module.exports = {
     ecmaVersion: 5
   },
   noInlineConfig: true,
+  env: {
+    'browser': true,
+    'node': true,
+    'jasmine': true
+  },
+  globals: {
+    '_': true,
+    'FILL_ME_IN': true
+  },
   rules: {
     /* Indentation */
     'no-mixed-spaces-and-tabs': 2,
     'indent-legacy': [2, 2],
     /* Variable names */
+    'no-undef': 2,
     'camelcase': 2,
     /* Language constructs */
     'curly': 2,
